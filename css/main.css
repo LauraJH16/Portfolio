@@ -1,0 +1,104 @@
+@media (min-width: 992px){
+  #sideNav {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 17rem;
+    height: 100vh;
+    background-color: #252525 !important;
+    flex-direction: column;
+  }
+  #sideNav .navbar-collapse .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+  }
+  #inicio {
+    font-size: 25px;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+  }
+
+  #inicio .inicio-opacity {
+    height: 100vh;
+    background: url(../assets/images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: .4;
+    z-index: 9999;
+  }
+
+  #inicio .subtitle {
+    margin-top: -4%;
+    margin-left: 60%;
+  }
+
+  #inicio .title-section {
+    margin-top: -60%;
+    font-size: 90px;
+  }
+
+  #sobre-mi {
+    height: 100vh;
+    background-color: #bebebe;
+    text-align: center;
+    color: #252525;
+    font-size: 25px;
+    font-weight: 300;
+    font-family: 'Lato', sans-serif;
+  }
+
+  .title-section {
+    font-size: 65px;
+    font-family: 'Ubuntu', sans-serif;
+    z-index: 10;
+  }
+
+  #sobre-mi div {
+    padding-top: 3%;
+  }
+
+  #habilidades {
+    height: 100vh;
+    background-color: #bebebe;
+    font-size: 25px;
+    font-weight: 300;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+  }
+
+  #habilidades div {
+    padding-top: 3%;
+  }
+
+  #habilidades ul li{
+    display: inline-block;
+  }
+
+  .hab-icons {
+    height: 140px;
+  }
+
+  #portafolio {
+    height: 100vh;
+    background-color: #bebebe;
+    font-size: 25px;
+    font-weight: 300;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+  }
+
+  #contactame {
+    height: 100vh;
+    background-color: #bebebe;
+    font-size: 25px;
+    font-weight: 300;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+  }
+
+  nav li:hover {
+    border-left: 3px solid #bebebe;
+  }
+}
