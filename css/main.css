@@ -12,6 +12,7 @@
   #sideNav .navbar-collapse .navbar-nav {
     flex-direction: column;
     width: 100%;
+    margin-top: -80%;
   }
   #inicio {
     font-size: 25px;
@@ -98,7 +99,11 @@
     text-align: center;
   }
 
-  nav li:hover {
+  nav li:hover, nav li:active {
     border-left: 3px solid #bebebe;
+  }
+
+  .user img {
+    width: 175px;
   }
 }
