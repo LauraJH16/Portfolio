@@ -101,6 +101,7 @@
 
   nav li:hover, nav li:active {
     border-left: 3px solid #bebebe;
+    background-color: #474747;
   }
 
   .user img {
