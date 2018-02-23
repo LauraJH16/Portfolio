@@ -1,110 +1,122 @@
-@media (min-width: 992px){
-  #sideNav {
-    text-align: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 17rem;
-    height: 100vh;
-    background-color: #252525 !important;
-    flex-direction: column;
-  }
-  #sideNav .navbar-collapse .navbar-nav {
-    flex-direction: column;
-    width: 100%;
-    margin-top: -80%;
-  }
-  #inicio {
-    font-size: 25px;
-    font-weight: 400;
-    font-family: 'Lato', sans-serif;
-  }
-
-  #inicio .inicio-opacity {
-    height: 100vh;
-    background: url(../assets/images/background.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: .4;
-    z-index: 9999;
-  }
-
-  #inicio .subtitle {
-    margin-top: -4%;
-    margin-left: 60%;
-  }
-
-  #inicio .title-section {
-    margin-top: -60%;
-    font-size: 90px;
-  }
-
-  #sobre-mi {
-    height: 100vh;
-    background-color: #bebebe;
-    text-align: center;
-    color: #252525;
-    font-size: 25px;
-    font-weight: 300;
-    font-family: 'Lato', sans-serif;
-  }
-
-  .title-section {
-    font-size: 65px;
-    font-family: 'Ubuntu', sans-serif;
-    z-index: 10;
-  }
-
-  #sobre-mi div {
-    padding-top: 3%;
-  }
-
-  #habilidades {
-    height: 100vh;
-    background-color: #bebebe;
-    font-size: 25px;
-    font-weight: 300;
-    font-family: 'Lato', sans-serif;
-    text-align: center;
-  }
-
-  #habilidades div {
-    padding-top: 3%;
-  }
-
-  #habilidades ul li{
-    display: inline-block;
-  }
-
-  .hab-icons {
-    height: 140px;
-  }
-
-  #portafolio {
-    height: 100vh;
-    background-color: #bebebe;
-    font-size: 25px;
-    font-weight: 300;
-    font-family: 'Lato', sans-serif;
-    text-align: center;
-  }
-
-  #contactame {
-    height: 100vh;
-    background-color: #bebebe;
-    font-size: 25px;
-    font-weight: 300;
-    font-family: 'Lato', sans-serif;
-    text-align: center;
-  }
-
-  nav li:hover, nav li:active {
-    border-left: 3px solid #bebebe;
-    background-color: #474747;
-  }
-
-  .user img {
-    width: 175px;
-  }
+* {
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: 3px;
 }
+
+#header nav {
+    height: 82px;
+    background: transparent;
+    position: fixed;
+    box-shadow: 0px 0px 0px 0px;
+    z-index: 9999;
+}
+
+.main-menu {
+    display: block;
+    font-size: 17px;
+    float: left;
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 20px 40px 0 40px;
+    width: calc(100% - 500px);
+    font-weight: 500;
+}
+
+#main-menu li{
+    display: inline-block;
+    margin-right: 40px;
+}
+
+#main-menu li a {
+    color: white;
+    text-decoration: none;
+}
+
+.page-banner {
+    min-height: 100vh;
+    background-image: url('../assets/images/fondo-bg.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+.page-banner .row {
+    margin-bottom: 0px;
+}
+
+main .row h1.col {
+    position: absolute;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 17.5px;
+    padding-right: 0px;
+    margin-top: 18%;
+    background: rgba(0, 0, 0, 0.207);
+    width: 80%;
+    text-align: center;
+}
+
+main .row h4.col {
+    position: absolute;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    margin-top: 24%;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+#sobre-mi .row h1.col {
+    position: absolute;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    letter-spacing: 10px;
+    padding-left: 12%;
+    padding-right: 0px;
+    margin-top: 7%;
+}
+
+#sobre-mi .row p.col {
+    position: absolute;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    padding-right: 0px;
+    margin-top: 15%;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+#sobre-mi .row img.col {
+    margin-top: 15%;
+    width: 300px;
+}
+
+.logo {
+    margin-top: 7px;
+}
+
+#sobre-mi{
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+}
+
+#habilidades{
+    height: 100vh;
+    background: url('../assets/images/fondo-hab.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+#portafolio{
+    height: 100vh;
+}
+
+#contactame{
+    height: 100vh;
+}
+
+.scroll-down {
+    background-color: white;
+    box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+}
+
+
+
