@@ -82,6 +82,8 @@ main .row h4.col {
     margin-top: 15%;
     letter-spacing: 2px;
     font-size: 20px;
+    text-align: justify;
+    width: 30%;
 }
 
 #sobre-mi .row img.col {
@@ -116,6 +118,13 @@ main .row h4.col {
 .scroll-down {
     background-color: white;
     box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+}
+
+.frase {
+    text-align: center;
+    color: rgb(44, 123, 155);
+    margin-top: 50px;
+    margin-left: 45px;
 }
 
 
