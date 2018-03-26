@@ -3,6 +3,65 @@
   letter-spacing: 3px;
 }
 
+.hamburger{
+	position:fixed;
+  background-color:transparent;
+	left:0;
+	top:0;
+	height:30px;
+	width:30px;
+	padding:20px 20px;
+	-webkit-transform:translate3d(0, 0, 0);
+	transform:translate3d(0, 0, 0);
+	-webkit-transition:-webkit-transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+	transition:transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+	z-index:1002;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none
+}
+.hamburger.is-active{
+  background-color:none;
+}
+._layer{
+	background:#333333;
+	margin-bottom:4px;
+	border-radius:2px;
+	width:28px;
+	height:4px;
+	opacity:1;
+	-webkit-transform:translate3d(0, 0, 0);
+	transform:translate3d(0, 0, 0);
+	-webkit-transition:all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+	transition:all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+}
+.hamburger:hover .-top{
+	-webkit-transform:translateY(-100%);
+	-ms-transform:translateY(-100%);
+	transform:translateY(-100%);
+}
+.hamburger:hover .-bottom{
+	-webkit-transform:translateY(100%);
+	-ms-transform:translateY(100%);
+	transform:translateY(100%);
+	}
+.hamburger.is-active .-top{
+	-webkit-transform:translateY(200%) rotate(45deg) !important;
+	-ms-transform:translateY(200%) rotate(45deg) !important;
+	transform:translateY(200%) rotate(45deg) !important;
+}
+.hamburger.is-active .-mid{
+	opacity:0;
+}
+.hamburger.is-active .-bottom{
+	-webkit-transform:translateY(-200%) rotate(135deg) !important;
+	-ms-transform:translateY(-200%) rotate(135deg) !important;
+	transform:translateY(-200%) rotate(135deg) !important;
+}
+
+
 #header nav {
   height: 82px;
   background: transparent;
@@ -50,7 +109,7 @@ main .row h1.col {
   color: #fff;
   letter-spacing: 17.5px;
   padding-right: 0px;
-  margin-top: 18%;
+  margin-top: 38%;
   background: rgba(0, 0, 0, 0.207);
   width: 80%;
   text-align: center;
@@ -60,23 +119,21 @@ main .row h4.col {
   position: absolute;
   font-weight: 700;
   color: rgb(0, 0, 0);
-  margin-top: 24%;
+  margin-top: 80%;
   text-align: center;
   letter-spacing: 4px;
 }
 
 #sobre-mi .row h1.col {
-  position: absolute;
   font-weight: 700;
   color: rgb(0, 0, 0);
   letter-spacing: 10px;
-  padding-left: 12%;
-  padding-right: 0px;
-  margin-top: 7%;
+  margin-top: 27%;
+  text-align: center;
+  font-size: 40px;
 }
 
 #sobre-mi .row p.col {
-  position: absolute;
   font-weight: 500;
   color: rgb(0, 0, 0);
   padding-right: 0px;
@@ -84,12 +141,6 @@ main .row h4.col {
   letter-spacing: 2px;
   font-size: 20px;
   text-align: justify;
-  width: 30%;
-}
-
-#sobre-mi .row img.col {
-  margin-top: 15%;
-  width: 300px;
 }
 
 .logo {
@@ -97,19 +148,13 @@ main .row h4.col {
 }
 
 #sobre-mi {
-  height: 100vh;
   background-color: rgb(255, 255, 255);
 }
 
 #habilidades {
-  height: 100vh;
   background-image: url('../assets/images/verdee.jpg');
   background-size: cover;
   background-position: top center;
-}
-
-#portafolio {
-  height: 100vh;
 }
 
 #contactame {
@@ -117,10 +162,6 @@ main .row h4.col {
   background-image: url('../assets/images/city.jpg');
   background-size: cover;
   background-position: top center;
-}
-
-.contactame-row {
-  height: 100vh;
 }
 
 .scroll-down {
@@ -136,13 +177,13 @@ main .row h4.col {
 }
 
 #habilidades .row h1.col {
-  position: absolute;
   font-weight: 700;
   color: #ffffff;
   letter-spacing: 10px;
   padding-left: 12%;
   padding-right: 0px;
-  margin-top: 7%;
+  margin-top: 27%;
+  font-size: 40px;
 }
 
 .tech {
@@ -151,7 +192,6 @@ main .row h4.col {
 }
 
 .skills {
-  margin-top: 15%;
   text-align: center;
 }
 
@@ -209,6 +249,7 @@ main .row h4.col {
   font-weight: 700;
   letter-spacing: 10px;
   padding-right: 0px;
+  font-size: 40px;
 }
 
 #portafolio .card-title {
@@ -227,31 +268,32 @@ main .row h4.col {
   font-weight: 700;
   letter-spacing: 10px;
   color: white;
+  font-size: 40px;
 }
 
 #contactame .contc {
   background-color: rgba(0, 0, 0, 0.555);
-  margin: 55px;
+  margin: 10px;
   padding-top: 20px;
-  height: 200px;
+  height: 130px;
 }
 
 #contactame .contc:hover {
   background-color: rgba(0, 0, 0, 0.74);
 }
 
-#contactame .contc:first-child {
-  margin-left: 150px;
-}
-
 #contactame .contc p {
   color: white;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 14px;
 }
 
 #contactame .contc img {
-  height: 100px;
+  height: 60px;
+}
+
+#contactame .ult {
+  margin-left: 25%;
 }
 
 footer {
@@ -259,7 +301,6 @@ footer {
   color: white;
   height: 9.5vh;
   text-align: center;
-  padding-top: 7px;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -280,6 +321,7 @@ footer {
   font-size: 20px;
   font-weight: 500;
   cursor: pointer;
+  margin-top: 5%;
 }
 
 #contactame .cv:hover {
@@ -291,3 +333,102 @@ footer {
   width: 100px;
 } */
 
+#header nav .row .button-collapse {
+  float: right;
+}
+
+#header nav .row .button-collapse i.material-icons{
+  font-size: 30px;
+  line-height: 2.5;
+}
+
+@media (min-width: 992px) {
+
+  main .row h1.col {
+    margin-top: 18%;
+  }
+
+  main .row h4.col {
+    margin-top: 24%;
+  }
+
+  #sobre-mi {
+    height: 100vh;
+  }
+
+  #habilidades {
+    height: 100vh;
+  }
+
+  #sobre-mi .row img.col {
+    margin-top: 15%;
+    width: 300px;
+  }
+
+  #sobre-mi .row h1.col {
+    margin-top: 7%;
+    position: absolute;
+    font-size: 4.2rem;
+  }
+
+  #sobre-mi .row p.col {
+    width: 30%;
+    position: absolute;
+  }
+
+  #habilidades .row h1.col {
+    margin-top: 7%;
+    position: absolute;
+    font-size: 4.2rem;
+  }
+
+  .skills {
+    margin-top: 15%;
+  }
+
+  #portafolio {
+    height: 100vh;
+  }
+
+  #portafolio h1 {
+    font-size: 4.2rem;
+  }
+
+  .contactame-row {
+    height: 100vh;
+  }
+
+  #contactame .contc:first-child {
+    margin-left: 150px;
+  }
+
+  #contactame .contc {
+    background-color: rgba(0, 0, 0, 0.555);
+    margin: 55px;
+    padding-top: 20px;
+    height: 200px;
+  }
+
+  #contactame h1 {
+    font-size: 4.2rem;
+  }
+
+  #contactame .contc p {
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+  }
+  
+  #contactame .contc img {
+    height: 100px;
+  }
+
+  footer {
+    padding-top: 7px;
+  }
+
+  #contactame .cv {
+    margin-top: 0px;
+  }
+
+}
