@@ -113,11 +113,14 @@ main .row h4.col {
 }
 
 #contactame {
-  height: 100vh;
   text-align: center;
   background-image: url('../assets/images/city.jpg');
   background-size: cover;
   background-position: top center;
+}
+
+.contactame-row {
+  height: 100vh;
 }
 
 .scroll-down {
@@ -230,24 +233,61 @@ main .row h4.col {
   background-color: rgba(0, 0, 0, 0.555);
   margin: 55px;
   padding-top: 20px;
-  height: 280px;
+  height: 200px;
+}
+
+#contactame .contc:hover {
+  background-color: rgba(0, 0, 0, 0.74);
+}
+
+#contactame .contc:first-child {
+  margin-left: 150px;
 }
 
 #contactame .contc p {
   color: white;
   font-weight: 500;
-  font-size: 35px;
+  font-size: 20px;
 }
 
 #contactame .contc img {
-  height: 150px;
+  height: 100px;
 }
 
 footer {
-  margin-top: 1.5%;
   background-color: rgba(0, 0, 0, 0.555);
   color: white;
   height: 9.5vh;
   text-align: center;
   padding-top: 7px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
+
+.frase-contact {
+  color: white;
+  font-size: 23px;
+  font-weight: 500;
+  letter-spacing: 7px;
+  margin-top: -15px;
+}
+
+#contactame .cv {
+  background-color: rgba(255, 255, 255, 0.493);
+  padding: 17px 28px;
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+#contactame .cv:hover {
+  background-color: #fff;
+}
+
+/* .intereses {
+  position: absolute;
+  width: 100px;
+} */
+
